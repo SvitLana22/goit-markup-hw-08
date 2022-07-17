@@ -1,0 +1,96 @@
+.team {
+    background-color: #F5F4FA;
+    padding: 60px 0;
+    @include desktop {
+        padding: 94px 0;
+    }
+}
+
+.team-title {
+    margin-bottom: 50px;
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team-item {
+    @include mobile {
+        width: 100%;
+    }
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+        }
+    @include desktop {
+        width: calc((100% - 90px) / 4);
+    }
+    background-color: var(--main-white-color);
+    border-radius: 0px 0px 4px 4px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+}
+
+.team-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-top-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    margin-bottom: 10px;
+}
+
+.team-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    margin-bottom: 16px;
+}
+
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-soc-item {
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
+    &:first-child {
+        margin-left: 0;
+        }
+}
+
+.team-soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #AFB1B8;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--main-white-color);
+        }
+}
+
+.team-soc-icon {
+    fill: currentColor;
+}
+
