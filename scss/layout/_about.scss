@@ -6,10 +6,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    align-items: center;
+    justify-content: center;
     
 }
 
-.benefits__item {
+.benefits__item { 
     @include tablet {
         width: calc((100% - 30px) / 2);
     }
@@ -19,8 +21,8 @@
 }
 
 .benefits__icon {
-    // width: 270px;
-    // height: 120px;
+    width: 270px;
+    height: 120px;
     background: #F5F4FA;
     border-radius: 4px;
     display: flex;
