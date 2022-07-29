@@ -4,9 +4,12 @@
     padding-bottom: 60px;
 
     .container {
-        display: flex;
-        align-items: baseline;
-        
+        display: block;
+        @include desktop {
+            display: flex;
+            align-items: baseline;
+        }
+
     }
 
     .logo {
@@ -29,6 +32,19 @@
 .footer-logo {
     color: var(--main-white-color);
 }
+.footer-tablet {
+    display: block;
+    @include tablet {
+        display: flex;
+        align-items: baseline;
+    }
+    
+}
+.footer-address {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
 
 .address {
     font-style: normal;
@@ -81,13 +97,21 @@
 }
 
 .footer-soc {
+    text-align: center;
     width: 206px;
     height: 80px;
-    margin-left: 70px;
+    margin-bottom: 60px;
+    @include desktop {
+        margin-left: 70px;
+        text-align: left;
+    }
+    
 }
 
 .footer-soc-list {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
 }
 
