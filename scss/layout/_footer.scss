@@ -37,6 +37,7 @@
     @include tablet {
         display: flex;
         align-items: baseline;
+        justify-content: center;
     }
     
 }
@@ -87,20 +88,17 @@
     }
 }
 
-.footer-top-text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--main-white-color);
-}
-
 .footer-soc {
-    text-align: center;
+    // text-align: center;
     width: 206px;
     height: 80px;
     margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    @include tablet {
+        margin-right: 0;
+        margin-left: 165px;
+    }
     @include desktop {
         margin-left: 70px;
         text-align: left;
@@ -149,11 +147,28 @@
     margin-left: auto;
 }
 
+.footer-top-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-white-color);
+    text-align: center;
+    @include desktop {
+        text-align: left;
+    }
+}
+
 .footer-form {
     margin-top: 20px;
     display: flex;
     align-items: center;
     text-align: center;
+    flex-direction: column;
+    @include desktop {
+        flex-direction: row;
+    }
 }
 
 .footer-input {
@@ -190,7 +205,7 @@
     height: 50px;
     background-color: #2196F3;
     border-radius: 4px;
-    margin-left: 12px;
+    margin-top: 20px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -202,6 +217,10 @@
 
     &:hover &:focus {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    @include desktop {
+        margin-left: 15px;
+        margin-top: 0;
     }
 }
 

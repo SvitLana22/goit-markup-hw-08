@@ -15,8 +15,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 580px;
     padding: 40px;
     background-color: #FFFFFF;
     border-radius: 4px;
@@ -24,6 +24,16 @@
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0);
         }
+}
+@media screen and (max-width: 479px) {
+    .modal {
+        width: 320px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 }
 
 .modal-close-btn {

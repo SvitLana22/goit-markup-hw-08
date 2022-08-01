@@ -113,8 +113,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 580px;
   padding: 40px;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -124,6 +124,15 @@ body {
   transform: translate(-50%, -50%) scale(0);
 }
 
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 320px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .modal-close-btn {
   position: absolute;
   right: 8px;
@@ -870,6 +879,7 @@ body {
   .footer-tablet {
     display: flex;
     align-items: baseline;
+    justify-content: center;
   }
 }
 
@@ -917,20 +927,18 @@ body {
   color: var(--accent-color);
 }
 
-.footer-top-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-white-color);
-}
-
 .footer-soc {
-  text-align: center;
   width: 206px;
   height: 80px;
   margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .footer-soc {
+    margin-right: 0;
+    margin-left: 165px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-soc {
@@ -977,11 +985,32 @@ body {
   margin-left: auto;
 }
 
+.footer-top-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-white-color);
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-top-text {
+    text-align: left;
+  }
+}
+
 .footer-form {
   margin-top: 20px;
   display: flex;
   align-items: center;
   text-align: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    flex-direction: row;
+  }
 }
 
 .footer-input {
@@ -1015,7 +1044,7 @@ body {
   height: 50px;
   background-color: #2196F3;
   border-radius: 4px;
-  margin-left: 12px;
+  margin-top: 20px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -1027,6 +1056,12 @@ body {
 }
 .footer-btn:hover .footer-btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 1200px) {
+  .footer-btn {
+    margin-left: 15px;
+    margin-top: 0;
+  }
 }
 
 .send-icon {
