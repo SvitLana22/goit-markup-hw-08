@@ -94,8 +94,8 @@
     align-items: center;
     padding: 5px;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -103,6 +103,10 @@
     &:focus {
         color: var(--accent-color);
         }
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.14;
+    }
     @include desktop {
         padding-top: 32px;
         padding-bottom: 32px;
