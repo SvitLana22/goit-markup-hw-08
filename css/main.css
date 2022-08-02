@@ -431,16 +431,17 @@ body {
 .connect__item {
   color: var(--text-color);
 }
-.connect__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .connect__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .connect__mail,
 .connect__tel {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 5px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -453,6 +454,13 @@ body {
 .connect__tel:focus {
   color: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .connect__mail,
+.connect__tel {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 
 .connect__icon {
   fill: currentColor;
@@ -462,6 +470,7 @@ body {
 .menu-open-btn {
   display: flex;
   margin-left: auto;
+  padding: 5px;
   position: absolute;
   right: 15px;
   top: 10px;
@@ -473,6 +482,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
 }
 
 .menu-icon {
@@ -516,11 +530,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-@media screen and (min-width: 768px) {
-  .close-menu-btn {
-    display: none;
-  }
 }
 
 .nav-menu {

@@ -82,16 +82,17 @@
 }
 .connect__item {
     color: var(--text-color);
+    @include desktop {
     &:not(:last-child) {
         margin-right: 50px;
         }
+    }
 }
 .connect__mail,
 .connect__tel {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 5px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -102,6 +103,10 @@
     &:focus {
         color: var(--accent-color);
         }
+    @include desktop {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 }
 .connect__icon {
     fill: currentColor;
@@ -111,6 +116,7 @@
 .menu-open-btn {
     display: flex;
     margin-left: auto;
+    padding: 5px;
     position: absolute;
     right: 15px;
     top: 10px;
@@ -122,6 +128,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include tablet {
+        display: none;
+        }
     }
 
 .menu-icon {
@@ -161,9 +170,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @include tablet {
-        display: none;
-    }
+    
 }
 .nav-menu {
     margin-bottom: 50px;
