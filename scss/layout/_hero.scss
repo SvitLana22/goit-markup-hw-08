@@ -56,20 +56,11 @@
     @media screen and (max-width: 479px){
         max-width: 479px;
     }
-    // @include mobile {
-    //     width: 480px;
-    // }
-    // @include tablet {
-    //     width: 768px;
-    // }
-    // @include desktop {
-    //     width: 1200px;
-    // }
 }
 .hero-title {
     width: calc(100% - 30px);
     font-weight: 900;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.61;
     text-align: center;
     letter-spacing: 0.06em;
@@ -82,10 +73,10 @@
         font-size: 26px;
         width: 360px;
     }
-    @include tablet {
-        font-size: 26px;
-        width: 360px;
-    }
+    // @include tablet {
+    //     font-size: 26px;
+    //     width: 360px;
+    // }
     @include desktop {
         font-size: 44px;
         line-height: 1.36;
