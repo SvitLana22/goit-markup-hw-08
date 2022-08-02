@@ -141,7 +141,10 @@
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
-    overflow: auto;
+    overflow-y: auto;
+    @include tablet {
+        display: none;
+    }
 }
 .close-menu-btn {
     display: block;
@@ -158,6 +161,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include tablet {
+        display: none;
+    }
 }
 .nav-menu {
     margin-bottom: 50px;

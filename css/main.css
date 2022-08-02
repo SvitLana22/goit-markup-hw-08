@@ -493,7 +493,12 @@ body {
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
-  overflow: auto;
+  overflow-y: auto;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
 }
 
 .close-menu-btn {
@@ -511,6 +516,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .close-menu-btn {
+    display: none;
+  }
 }
 
 .nav-menu {
