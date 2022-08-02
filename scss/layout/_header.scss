@@ -133,6 +133,7 @@
         }
     }
 
+
 .menu-icon {
     top: 0;
     left: 0;
@@ -170,6 +171,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        outline: none;
+    }
     
 }
 .nav-menu {
@@ -210,10 +217,13 @@
 // }
 .mob-connect__tel {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 30px;
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    @media screen and (min-width: 480px){
+        font-size: 34px;
+    }
 }
 .mob-soc {
     display: flex;
