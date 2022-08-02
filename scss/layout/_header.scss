@@ -227,6 +227,8 @@
 }
 .mob-soc {
     display: flex;
+    flex-wrap: wrap;
+    gap:15px;
     margin-top: 64px;
     
 }
