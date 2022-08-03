@@ -112,10 +112,22 @@
         padding-bottom: 32px;
     }
 }
-.connect__icon {
+.connect__icon-mail {
     fill: currentColor;
     margin-right: 10px;
+    @include desktop {
+        width: 16px;
+        height: 12px;
+    }
 } 
+.connect__icon-tel {
+    fill: currentColor;
+    margin-right: 10px;
+    @include desktop {
+        width: 10px;
+        height: 16px;
+    }
+}
 
 .menu-open-btn {
     display: flex;
